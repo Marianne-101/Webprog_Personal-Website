@@ -3,8 +3,6 @@
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="css/mystyle.css">
-</head>
-<body>
     <style>
         body {
             background-color: #f0f8ff;
@@ -24,6 +22,7 @@
 
         h3 {
             color: #2e8b57;
+            text-align: center;
         }
 
         p {
@@ -40,6 +39,8 @@
             margin: 10px;
             border: 2px solid #ccc;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .container {
@@ -50,25 +51,42 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+
+        .profile-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .centered-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Adds space between images */
+            flex-wrap: wrap; /* Allows images to wrap to the next line on smaller screens */
+            margin-top: 20px;
+        }
+
+        .centered-images img {
+            width: 220px;
+            height: 140px;
+        }
     </style>
 </head>
-
 <body>
     <h1>Personal Profile Web Page</h1>
     <div class="container">
         <h3>About Me</h3>
         <section>
-        <div class="profile-card">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
-            <h3> Marianne Ellise P. Lama | mplama@student.apc.edu.ph </h3>
-            <h1 class="button-container">
-                <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr# class="button" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-            </h1>
-        </h1>
-    </section>
-        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to any type of adventures because my family loves to go out and spend time together.</p>
+            <div class="profile-card">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
+                <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
+                <h1 class="button-container">
+                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" class="button" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
+                </h1>
+            </div>
+        </section>
+        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
 
         <h1>Education / Achievements</h1>
         <ul>
@@ -84,7 +102,7 @@
         <h1>IT Experience</h1>
         <ul>
             <li>Programming</li>
-            <li>Code Combat
+            <li>Code Combat</li>
             <li>Gaming</li>
         </ul>  
 
@@ -102,9 +120,11 @@
 
         <h1>Picture Gallery</h1>
         <p>I like to spend time alone with nature.</p>
-        <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" style="width:220px;height:140px;">
-        <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" style="width:220px;height:140px;">
-        <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" style="width:220px;height:140px;">
+        <div class="centered-images">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+        </div>
     </div>
 </body>
 </html>
