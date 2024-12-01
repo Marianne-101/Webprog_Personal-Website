@@ -1,62 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="mystyle.css">
-    <title>Personal Profile Web Page</title>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/mystyle.css">
     <style>
         body {
-            background-color: rgb(131, 199, 131); /* Sets the background color to green */
-            color: white; /* Optional: Sets the text color to white for better contrast */
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #4682b4;
+            color: white;
+            margin: 0;
+        }
+
+        h3 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 15px;
+        }
+
+        ul {
+            margin: 15px;
+            padding-left: 20px;
+        }
+
+        img {
+            margin: 10px;
+            border: 2px solid #ccc;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .centered-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Adds space between images */
+            flex-wrap: wrap; /* Allows images to wrap to the next line on smaller screens */
+            margin-top: 20px;
+        }
+
+        .centered-images img {
+            width: 220px;
+            height: 140px;
         }
     </style>
 </head>
 <body>
+    <h1>Personal Profile Web Page</h1>
+    <div class="container">
+        <h3>About Me</h3>
+        <section>
+            <div class="profile-card">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
+                <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
+                <h1 class="button-container">
+                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" class="button" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
+                </h1>
+            </div>
+        </section>
+        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
 
-<h1>Personal Profile Web Page</h1>
+        <h1>Education / Achievements</h1>
+        <ul>
+            <li>I finished my High School at Signal Village National High School.</li>
+            <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
+            <li>Currently Studying at Asia Pacific College.</li>
+            <li>Graduated High School & Senior High with Honors.</li>
+        </ul>  
 
-<p>
-    <strong>About Me</strong><br>
-    I am Marianne Ellise P. Lama<br>
-    I finished senior at Learn & Explore Montessori School at Taguig City. Currently studying in Asia Pacific College.
-</p>
+        <h1>Course</h1> 
+        <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics</p> 
 
-<p>
-    <strong>Education / Achievements</strong><br>
-    I graduated High School and Senior High with Honors.
-</p>
+        <h1>IT Experience</h1>
+        <ul>
+            <li>Programming</li>
+            <li>Code Combat</li>
+            <li>Gaming</li>
+        </ul>  
 
-<p>
-    <strong>Course</strong><br>
-    Bachelor of Science in Computer Science (BSCS-SF231)
-</p>
+        <h1>Hobbies & Interests</h1>
+        <ul>
+            <li>Camping</li>
+            <li>Trekking or Hiking</li>
+            <li>Swimming</li>
+            <li>Learning how to play guitar</li>
+            <li>Travelling</li>
+        </ul>
 
-<p>
-    <strong>IT Experience</strong><br>
-    - Contributed to a working website and app for a school project here in APC, named <em>Rams Pawtners</em>.<br>
-    - I am part of the JISSA Org in Asia Pacific College.<br>
-    - I also completed a course in Code Combat.<br>
-</p>
+        <h1>Goals In Life / Dream</h1>
+        <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
 
-<p>
-    <strong>Hobbies & Interests</strong><br>
-    - Swimming<br>
-    - Watching movies<br>
-    - Reading<br>
-    - Learning how to play guitar<br>
-</p>
-
-
-<p>
-    <strong>Goals In Life / Dream</strong><br>
-    - Graduate College<br>
-    - Help my parents after I finished my degree.<br>
-</p>
-
-<p>
-    <strong>Picture Gallery</strong><br>
-    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f709b603-cddc-49a5-a1ca-17117eb9792a/dinsu3t-6fa3c5a5-78a3-4a84-b236-318df278a332.jpg/v1/fill/w_774,h_1032,q_70,strp/camping_by_mariannaellise_dinsu3t-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcL2Y3MDliNjAzLWNkZGMtNDlhNS1hMWNhLTE3MTE3ZWI5NzkyYVwvZGluc3UzdC02ZmEzYzVhNS03OGEzLTRhODQtYjIzNi0zMThkZjI3OGEzMzIuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ogV8SwBo7q64EidFWu-Zun5bI2PMZDeeNW1bzpWLo10" width="250" height="250"><br>
-    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f709b603-cddc-49a5-a1ca-17117eb9792a/dinswlj-599e7dd8-97b3-4a44-b1b8-67039bcbc6c9.jpg/v1/fill/w_774,h_1032,q_70,strp/picture_of_me_by_mariannaellise_dinswlj-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcL2Y3MDliNjAzLWNkZGMtNDlhNS1hMWNhLTE3MTE3ZWI5NzkyYVwvZGluc3dsai01OTllN2RkOC05N2IzLTRhNDQtYjFiOC02NzAzOWJjYmM2YzkuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jRgezKNmuZYcQOgSsO0hLmTOC90F113yu6CSgsVnGus"250" height="250"><br>
-</p>
-
+        <h1>Picture Gallery</h1>
+        <p>I like to spend time alone with nature.</p>
+        <div class="centered-images">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+        </div>
+    </div>
 </body>
 </html>
