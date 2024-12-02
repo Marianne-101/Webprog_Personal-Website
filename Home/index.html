@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <link rel="stylesheet" href="css/flexbox.css?version=0.2"> 
-
-    <title>Page Title</title>
+    <title>Personal Profile Web Page</title>
     <style>
+        /
         body {
             background-color: #f0f8ff;
             font-family: Arial, sans-serif;
@@ -14,7 +13,7 @@
         }
 
         h1 {
-            text-align: Align Justify;
+            text-align: center;
             padding: 20px;
             background-color: #4682b4;
             color: white;
@@ -28,21 +27,12 @@
 
         p {
             line-height: 1.6;
-            text-align: center;
             margin: 15px;
         }
 
         ul {
             margin: 15px;
             padding-left: 20px;
-        }
-
-        img {
-            margin: 10px;
-            border: 2px solid #ccc;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .container {
@@ -59,47 +49,54 @@
             padding: 20px;
         }
 
-        .centered-images {
+        /* Picture Gallery Styles */
+        .gallery-container {
             display: flex;
-            justify-content: center;
-            gap: 10px;
             flex-wrap: wrap;
-            margin-top: 20px;
+            gap: 15px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            padding: 10px;
         }
 
-        .centered-images img {
-            width: 220px;
-            height: 140px;
+        .gallery-item {
+            flex: 1 1 calc(30% - 15px);
+            max-width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <h1>Personal Profile Web Page</h1>
-    <div class="flex-container">
+
+    <div class="container">
         <h3>About Me</h3>
-        <section>
-            <div class="profile-card">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
-                <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
-                <h1 class="button-container">
-                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" class="button" target="_blank">Facebook</a>
-                    <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-                </h1>
-                <h1>Personal Profile Web page</h1>
-                <h1>
-<div class="flex-container">
-    <div>1 About Me</div>
-    <div>2 Education / Achievements</div>
-    <div>3 Course</div>  
-    <div>4 IT Experience</div>
-    <div>5 Hobbies & Interests</div>
-    <div>6 Goals In Life / Dream
-    </div>
-    <div>7 Picture Gallery</div>
+        <div class="profile-card">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
+            <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
+            <div>
+                <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
             </div>
-                </h1>
-        </section>
+        </div>
         <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
 
         <h1>Education / Achievements</h1>
@@ -108,17 +105,17 @@
             <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
             <li>Currently Studying at Asia Pacific College.</li>
             <li>Graduated High School & Senior High with Honors.</li>
-        </ul>  
+        </ul>
 
-        <h1>Course</h1> 
-        <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics</p> 
+        <h1>Course</h1>
+        <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics</p>
 
         <h1>IT Experience</h1>
         <ul>
             <li>Programming</li>
             <li>Code Combat</li>
             <li>Gaming</li>
-        </ul>  
+        </ul>
 
         <h1>Hobbies & Interests</h1>
         <ul>
@@ -134,10 +131,16 @@
 
         <h1>Picture Gallery</h1>
         <p>I like to spend time alone with nature.</p>
-        <div class="centered-images">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+            </div>
         </div>
     </div>
 </body>
