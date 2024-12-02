@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" href="css/flexbox.css?version=0.1"> 
+    <title>Personal Profile Web Page</title>
     <style>
-        html, body {
-            height: 100%; /* Ensures the background spans the full viewport height */
+        /* General Styles */
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: AliceBlue; /* Updated to a readable named color */
-            font-family: Arial, sans-serif;
-            color: DimGray;
+            color: #333;
         }
 
         h1 {
             text-align: center;
             padding: 20px;
-            background-color: SteelBlue; /* Updated to a readable named color */
+            background-color: #4682b4;
             color: white;
             margin: 0;
         }
 
         h3 {
-            color: SeaGreen; /* Updated to a readable named color */
+            color: #2e8b57;
             text-align: center;
         }
 
@@ -36,18 +35,10 @@
             padding-left: 20px;
         }
 
-        img {
-            margin: 10px;
-            border: 2px solid LightGray;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            background: White;
+            margin: 0 auto;
+            background: white;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -56,77 +47,109 @@
         .profile-card {
             text-align: center;
             padding: 20px;
-            border: 1px solid Gainsboro;
-            border-radius: 10px;
-            background-color: White;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .flex-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .flex-item {
-            flex: 1;
-            min-width: 250px;
+        /* About Me Section Centering */
+        .about-me {
             text-align: center;
-            padding: 20px;
-            background-color: Whitesmoke;
-            border: 1px solid Gainsboro;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 80%; /* Optional: to limit width */
         }
 
-        .centered-images {
+        /* Picture Gallery Styles */
+        .gallery-container {
             display: flex;
-            justify-content: center;
-            gap: 10px;
             flex-wrap: wrap;
-            margin-top: 20px;
+            gap: 15px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            padding: 10px;
         }
 
-        .centered-images img {
-            width: 220px;
-            height: 140px;
+        .gallery-item {
+            flex: 1 1 calc(30% - 15px); /* Adjusts size and space for 3 items per row */
+            max-width: 220px; /* Limit max width of items */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        .button-container a {
-            text-decoration: none;
-            color: white;
-            background-color: SteelBlue; /* Updated to a readable named color */
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 5px;
-            display: inline-block;
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .button-container a:hover {
-            background-color: LightSteelBlue; /* Updated to a readable named color */
+        .gallery-item img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <h1>Personal Profile Web Page</h1>
+
     <div class="container">
+        <!-- About Me Section -->
         <h3>About Me</h3>
-        <div class="profile-card flex-container">
-            <div class="flex-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
-                <h3>Marianne Ellise P. Lama</h3>
-                <p>mplama@student.apc.edu.ph</p>
-                <div class="button-container">
-                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a>
-                    <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-                </div>
+        <div class="profile-card about-me">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
+            <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
+            <div>
+                <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
             </div>
         </div>
         <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
+
+        <h1>Education / Achievements</h1>
+        <ul>
+            <li>I finished my High School at Signal Village National High School.</li>
+            <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
+            <li>Currently Studying at Asia Pacific College.</li>
+            <li>Graduated High School & Senior High with Honors.</li>
+        </ul>
+
+        <h1>Course</h1>
+        <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics</p>
+
+        <h1>IT Experience</h1>
+        <ul>
+            <li>Programming</li>
+            <li>Code Combat</li>
+            <li>Gaming</li>
+        </ul>
+
+        <h1>Hobbies & Interests</h1>
+        <ul>
+            <li>Camping</li>
+            <li>Trekking or Hiking</li>
+            <li>Swimming</li>
+            <li>Learning how to play guitar</li>
+            <li>Travelling</li>
+        </ul>
+
+        <h1>Goals In Life / Dream</h1>
+        <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
+
+        <h1>Picture Gallery</h1>
+        <p>I like to spend time alone with nature.</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+            </div>
+        </div>
     </div>
 </body>
 </html>
