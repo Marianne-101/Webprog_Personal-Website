@@ -3,7 +3,7 @@
 <head>
     <title>Personal Profile Web Page</title>
     <style>
-        /
+        /* General Styles */
         body {
             background-color: #f0f8ff;
             font-family: Arial, sans-serif;
@@ -61,8 +61,8 @@
         }
 
         .gallery-item {
-            flex: 1 1 calc(30% - 15px);
-            max-width: 220px;
+            flex: 1 1 calc(30% - 15px); /* Adjusts size and space for 3 items per row */
+            max-width: 220px; /* Limit max width of items */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             overflow: hidden;
@@ -78,7 +78,7 @@
         }
 
         .gallery-item img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Slight zoom effect */
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
