@@ -4,24 +4,25 @@
     <title>Page Title</title>
     <link rel="stylesheet" href="css/flexbox.css?version=0.1"> 
     <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%; /* Ensures the background spans the full viewport height */
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: AliceBlue; /* Updated to a readable named color */
+            font-family: Arial, sans-serif;
+            color: DimGray;
         }
 
         h1 {
             text-align: center;
             padding: 20px;
-            background-color: #4682b4;
+            background-color: SteelBlue; /* Updated to a readable named color */
             color: white;
             margin: 0;
         }
 
         h3 {
-            color: #2e8b57;
+            color: SeaGreen; /* Updated to a readable named color */
             text-align: center;
         }
 
@@ -37,7 +38,7 @@
 
         img {
             margin: 10px;
-            border: 2px solid #ccc;
+            border: 2px solid LightGray;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -45,8 +46,8 @@
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background: white;
+            margin: 20px auto;
+            background: White;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -55,6 +56,30 @@
         .profile-card {
             text-align: center;
             padding: 20px;
+            border: 1px solid Gainsboro;
+            border-radius: 10px;
+            background-color: White;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .flex-item {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+            background-color: Whitesmoke;
+            border: 1px solid Gainsboro;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .centered-images {
@@ -69,71 +94,39 @@
             width: 220px;
             height: 140px;
         }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            background-color: SteelBlue; /* Updated to a readable named color */
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .button-container a:hover {
+            background-color: LightSteelBlue; /* Updated to a readable named color */
+        }
     </style>
 </head>
 <body>
     <h1>Personal Profile Web Page</h1>
-    <div class="flex-container">
+    <div class="container">
         <h3>About Me</h3>
-        <section>
-            <div class="profile-card">
+        <div class="profile-card flex-container">
+            <div class="flex-item">
                 <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
-                <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
-                <h1 class="button-container">
-                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" class="button" target="_blank">Facebook</a>
+                <h3>Marianne Ellise P. Lama</h3>
+                <p>mplama@student.apc.edu.ph</p>
+                <div class="button-container">
+                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a>
                     <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
                     <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-                </h1>
-                <h1>Personal Profile Web page</h1>
-<div class="flex-container">
-    <div>1 About Me</div>
-    <div>2 Education / Achievements</div>
-    <div>3 Course</div>  
-    <div>4 IT Experience</div>
-    <div>5 Hobbies & Interests</div>
-    <div>6 Goals In Life / Dream</div>  
-    <div>7 Picture Gallery</div>
+                </div>
             </div>
-        </section>
-        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
-
-        <h1>Education / Achievements</h1>
-        <ul>
-            <li>I finished my High School at Signal Village National High School.</li>
-            <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
-            <li>Currently Studying at Asia Pacific College.</li>
-            <li>Graduated High School & Senior High with Honors.</li>
-        </ul>  
-
-        <h1>Course</h1> 
-        <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics</p> 
-
-        <h1>IT Experience</h1>
-        <ul>
-            <li>Programming</li>
-            <li>Code Combat</li>
-            <li>Gaming</li>
-        </ul>  
-
-        <h1>Hobbies & Interests</h1>
-        <ul>
-            <li>Camping</li>
-            <li>Trekking or Hiking</li>
-            <li>Swimming</li>
-            <li>Learning how to play guitar</li>
-            <li>Travelling</li>
-        </ul>
-
-        <h1>Goals In Life / Dream</h1>
-        <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
-
-        <h1>Picture Gallery</h1>
-        <p>I like to spend time alone with nature.</p>
-        <div class="centered-images">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
         </div>
+        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
     </div>
 </body>
 </html>
