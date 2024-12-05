@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="css/grid.css?version=0.1">
     <title>Personal Profile Web Page</title>
     <style>
         body {
@@ -93,8 +94,8 @@
 <body>
     <h1>Personal Profile Web Page</h1>
 
-    <div class="container">
-        <h3>About Me</h3>
+    <div class="grid-container">
+        <div class="item1"></div><h3>About Me</h3>
         <div class="profile-card about-me">
             <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
             <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
@@ -104,17 +105,18 @@
                 <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
             </div>
         </div>
-        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
+        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p></div>
 
-        <h1>Education / Achievements</h1>
+        <div class="item2"></div><h1>Education / Achievements</h1>
         <ul>
             <li>I finished my High School at Signal Village National High School.</li>
             <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
             <li>Currently Studying at Asia Pacific College.</li>
             <li>Graduated High School & Senior High with Honors.</li>
         </ul>
+    </div>
 
-        <h1>Course</h1>
+    <div class="item2"><h1>Course</h1>
         <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics</p>
 
         <h1>IT Experience</h1>
@@ -123,8 +125,9 @@
             <li>Code Combat</li>
             <li>Gaming</li>
         </ul>
+    </div>
 
-        <h1>Hobbies & Interests</h1>
+    <div class="item3"><h1>Hobbies & Interests</h1>
         <ul>
             <li>Camping</li>
             <li>Trekking or Hiking</li>
@@ -132,13 +135,18 @@
             <li>Learning how to play guitar</li>
             <li>Travelling</li>
         </ul>
+    </div>
 
-        <h1>Goals In Life / Dream</h1>
+    <div class="item4"><h1>Goals In Life / Dream</h1>
         <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
 
         <h1>Picture Gallery</h1>
-        <p>I like to spend time alone with nature.</p>
-        <div class="gallery-container">
+        <p>I like to spend time alone with nature.
+        </p>
+    </div>
+
+        
+    <div class="item5"><div class="gallery-container">
             <div class="gallery-item">
                 <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
             </div>
@@ -150,5 +158,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
