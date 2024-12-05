@@ -49,6 +49,7 @@
             text-align: center;
             padding: 20px;
         }
+        
         .about-me {
             text-align: center;
             margin: 20px auto;
@@ -89,80 +90,101 @@
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
+
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            gap: 30px;
+            background-color: #2196F3;
+            padding: 20px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
     <h1>Personal Profile Web Page</h1>
 
     <div class="grid-container">
-        </div>
         <div class="item1">
-        <h3>About Me</h3>
-        <div class="profile-card about-me">
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
-            <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
-            <div>
-                <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a> |
-                <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> |
-                <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
+            <h3>About Me</h3>
+            <div class="profile-card about-me">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
+                <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
+                <div>
+                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/mariannaellise" target="_blank">Instagram</a> |
+                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
+                </div>
             </div>
+            <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
         </div>
-        <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.
-        </p>
-    </div>
-    
-    <div class="item2">
-        <h1>Education / Achievements</h1>
-        <ul>
-            <li>I finished my High School at Signal Village National High School.</li>
-            <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
-            <li>Currently Studying at Asia Pacific College.</li>
-            <li>Graduated High School & Senior High with Honors.</li>
-        </ul>
-    </div>
-
-    <div class="item3">
-        <h1>Course</h1>
-        <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics.
-        </p>
-
-        <h1>IT Experience</h1>
-        <ul>
-            <li>Programming</li>
-            <li>Code Combat</li>
-            <li>Gaming</li>
-        </ul>
-    </div>
-
-    <div class="item4">
-        <h1>Hobbies & Interests</h1>
-        <ul>
-            <li>Camping</li>
-            <li>Trekking or Hiking</li>
-            <li>Swimming</li>
-            <li>Learning how to play guitar</li>
-            <li>Travelling</li>
-        </ul>
-    </div>
-
-    <div class="item5"><h1>Goals In Life / Dream</h1>
-        <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
-
-        <h1>Picture Gallery</h1>
-        <p>I like to spend time alone with nature.
-        </p>
-    </div>
-
-<div class="gallery-container">
-            <div class="gallery-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
-            </div>
-            <div class="gallery-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
-            </div>
-            <div class="gallery-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
-            </div>
+        
+        <div class="item2">
+            <h1>Education / Achievements</h1>
+            <ul>
+                <li>I finished my High School at Signal Village National High School.</li>
+                <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
+                <li>Currently Studying at Asia Pacific College.</li>
+                <li>Graduated High School & Senior High with Honors.</li>
+            </ul>
         </div>
+
+        <div class="item3">
+            <h1>Course</h1>
+            <p>Bachelor of Science in Computer Science with specialization in Cyber Security and Forensics.</p>
+            <h1>IT Experience</h1>
+            <ul>
+                <li>Programming</li>
+                <li>Code Combat</li>
+                <li>Gaming</li>
+            </ul>
+        </div>
+
+        <div class="item4">
+            <h1>Hobbies & Interests</h1>
+            <ul>
+                <li>Camping</li>
+                <li>Trekking or Hiking</li>
+                <li>Swimming</li>
+                <li>Learning how to play guitar</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+
+        <div class="item5">
+            <h1>Goals In Life / Dream</h1>
+            <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
+
+            <h1>Picture Gallery</h1>
+            <p>I like to spend time alone with nature.</p>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+        </div>
+    </div>
 </body>
 </html>
