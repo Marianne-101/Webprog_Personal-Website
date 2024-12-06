@@ -48,31 +48,27 @@
             text-align: center;
             padding: 20px;
         }
-
         .about-me {
             text-align: center;
             margin: 20px auto;
             max-width: 80%; 
         }
 
-        .gallery-container {
-            display: grid; /* Switch from flexbox to grid layout */
-            grid-template-columns: repeat(3, 1fr); /* Three columns */
-            gap: 15px;
-            justify-items: center;
-            align-items: flex-start;
-            margin: 20px auto;
-            padding: 10px;
+        .grid-container {
+            display: grid;
+            height: 400px;
+            align-content: center;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
             background-color: lightblue;
+            padding: 10px;
         }
 
-        .gallery-item {
-            background-color: lightblue;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            padding: 10px;
-            max-width: 220px;
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
         }
 
         .gallery-item img {
@@ -87,23 +83,6 @@
         .gallery-item img:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Grid layout for the main profile sections */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Two equal columns */
-            gap: 20px;
-            align-content: center; /* Center the content vertically */
-            margin-bottom: 20px;
-        }
-
-        .grid-item {
-            background-color: #d0e7ff;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -155,14 +134,14 @@
 
         <h1>Picture Gallery</h1>
         <p>I like to spend time alone with nature.</p>
-        <div class="gallery-container">
-            <div class="gallery-item">
+        <div class="grid-container">
+            <div>
                 <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
             </div>
-            <div class="gallery-item">
+            <div>
                 <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
             </div>
-            <div class="gallery-item">
+            <div>
                 <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
             </div>
         </div>
