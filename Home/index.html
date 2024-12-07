@@ -99,8 +99,8 @@
 
         .flex-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
             gap: 15px;
             padding: 20px;
             border-radius: 10px;
@@ -121,12 +121,13 @@
     </style>
 </head>
 <body>
-    <h1>Personal Profile Web Page</h1>
+    <h1 class="flex-container">
+        <div>Personal Profile Web Page</div>
+    </h1>
 
     <div class="container flex-container">
         <div class="profile-card about-me">
             <h3>About Me</h3>
-            <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/Formal%20pic%20of%20me.jpg?raw=true" alt="My Profile Picture" width="150">
             <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
             <div>
                 <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a> |
