@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Personal Profile Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             background-color: #f0f8ff;
@@ -42,18 +46,6 @@
         ul {
             margin: 15px;
             padding-left: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin: 10px;
-            flex-basis: calc(33.333% - 20px);
-            box-sizing: border-box;
         }
 
         .profile-card {
@@ -129,46 +121,38 @@
 <body>
     <h1>Personal Profile Web Page</h1>
 
-    <div class="flex-container">
-        <div class="container">
-            <div class="profile-card about-me">
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-sm-3 p-3 bg-primary text-white">
                 <h3>About Me</h3>
-                <h3>Marianne Ellise P. Lama | mplama@student.apc.edu.ph</h3>
-                <div>
-                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a> |
-                    <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> |
-                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-                </div>
-                <p>I am Marianne Ellise P. Lama. A second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
+                <p>Marianne Ellise P. Lama</p>
+                <p>mplama@student.apc.edu.ph</p>
+                <p>
+                    <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank" class="text-white">Facebook</a> |
+                    <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white">Instagram</a> |
+                    <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank" class="text-white">LinkedIn</a>
+                </p>
+                <p>I am a second-year student at Asia Pacific College. I was born and raised in Taguig City. I've always loved and enjoyed going out since I was a kid. I've been exposed to all types of adventures because my family loves to go out and spend time together.</p>
             </div>
-        </div>
-
-        <div class="container">
-            <div>
-                <h1>Education / Achievements</h1>
+            <div class="col-sm-3 p-3 bg-dark text-white">
+                <h3>Education / Achievements</h3>
                 <ul>
-                    <li>I finished my High School at Signal Village National High School.</li>
-                    <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
+                    <li>Finished High School at Signal Village National High School.</li>
+                    <li>Graduated Senior High at Learn & Explore Montessori School.</li>
                     <li>Currently Studying at Asia Pacific College.</li>
                     <li>Graduated High School & Senior High with Honors.</li>
                 </ul>
             </div>
-        </div>
-
-        <div class="container">
-            <div>
-                <h1>IT Experience</h1>
+            <div class="col-sm-3 p-3 bg-primary text-white">
+                <h3>IT Experience</h3>
                 <ul>
                     <li>Programming</li>
                     <li>Code Combat</li>
                     <li>Gaming</li>
                 </ul>
             </div>
-        </div>
-
-        <div class="container">
-            <div>
-                <h1>Hobbies & Interests</h1>
+            <div class="col-sm-3 p-3 bg-dark text-white">
+                <h3>Hobbies & Interests</h3>
                 <ul>
                     <li>Camping</li>
                     <li>Trekking or Hiking</li>
@@ -177,18 +161,12 @@
                     <li>Travelling</li>
                 </ul>
             </div>
-        </div>
-
-        <div class="container">
-            <div>
-                <h1>Goals In Life / Dream</h1>
+            <div class="col-sm-3 p-3 bg-primary text-white">
+                <h3>Goals In Life / Dream</h3>
                 <p>To live a life of purpose means embracing every moment, seeking out new horizons, and ensuring that the ones you care for are supported and secure. It’s about turning each day into an opportunity to grow, explore, and give back, building a future filled with adventure and responsibility.</p>
             </div>
-        </div>
-
-        <div class="container">
-            <div>
-                <h1>Picture Gallery</h1>
+            <div class="col-sm-3 p-3 bg-dark text-white">
+                <h3>Picture Gallery</h3>
                 <p>I like to spend time alone with nature.</p>
                 <div class="gallery-container">
                     <div class="gallery-item">
