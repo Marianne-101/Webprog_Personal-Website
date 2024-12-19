@@ -12,7 +12,7 @@
             padding: 0;
         }
 
-        h1, h2, h3 {
+        h1, h2 {
             text-align: center;
             color: #4682b4;
         }
@@ -49,9 +49,17 @@
         }
 
         /* Container Styling */
+        .landscape-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: space-around;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            flex: 1 1 calc(33.33% - 40px);
+            max-width: 300px;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
@@ -61,8 +69,8 @@
         .gallery-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 15px;
+            justify-content: center;
         }
 
         .gallery-item {
@@ -99,14 +107,14 @@
         }
 
         /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .gallery-item {
+        @media screen and (max-width: 1024px) {
+            .container {
                 flex: 1 1 45%;
             }
         }
 
-        @media screen and (max-width: 480px) {
-            .gallery-item {
+        @media screen and (max-width: 768px) {
+            .container {
                 flex: 1 1 100%;
             }
         }
@@ -115,67 +123,68 @@
 <body>
     <h1>Personal Profile</h1>
 
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hi, I’m Marianne Ellise P. Lama, a second-year student at Asia Pacific College. I was born and raised in Taguig City. I love outdoor activities, especially camping, hiking, and swimming. I’m passionate about self-growth and academic excellence.</p>
-        <p>
-            <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr" target="_blank">Facebook</a> | 
-            <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | 
-            <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-        </p>
-    </div>
+    <div class="landscape-container">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I’m Marianne Ellise P. Lama, a second-year student at Asia Pacific College. I was born and raised in Taguig City. I love outdoor activities, especially camping, hiking, and swimming. I’m passionate about self-growth and academic excellence.</p>
+            <p>
+                <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | 
+                <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
 
-    <div class="container">
-        <h2>Education & Achievements</h2>
-        <ul>
-            <li>Graduated with honors from Signal Village National High School.</li>
-            <li>Senior High: Learn & Explore Montessori School.</li>
-            <li>Currently studying at Asia Pacific College.</li>
-        </ul>
-    </div>
+        <div class="container">
+            <h2>Education & Achievements</h2>
+            <ul>
+                <li>Graduated with honors from Signal Village National High School.</li>
+                <li>Senior High: Learn & Explore Montessori School.</li>
+                <li>Currently studying at Asia Pacific College.</li>
+            </ul>
+        </div>
 
-    <div class="container">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Camping</li>
-            <li>Trekking or Hiking</li>
-            <li>Swimming</li>
-            <li>Learning guitar</li>
-            <li>Traveling</li>
-        </ul>
-    </div>
+        <div class="container">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Camping</li>
+                <li>Trekking or Hiking</li>
+                <li>Swimming</li>
+                <li>Learning guitar</li>
+                <li>Traveling</li>
+            </ul>
+        </div>
 
-    <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
-            </div>
-            <div class="gallery-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
-            </div>
-            <div class="gallery-item">
-                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="Me">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="Me">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <h2>Goals & Dreams</h2>
-        <p>My dream is to live a purposeful life, filled with adventures, self-growth, and giving back to those who support me.</p>
-        <ul>
-            <li>Achieve success in my career.</li>
-            <li>Support my family and community.</li>
-            <li>Maintain a healthy and happy lifestyle.</li>
-            <li>Travel the world and explore new opportunities.</li>
-        </ul>
-    </div>
+        <div class="container">
+            <h2>Goals & Dreams</h2>
+            <p>My dream is to live a purposeful life, filled with adventures, self-growth, and giving back to those who support me.</p>
+            <ul>
+                <li>Achieve success in my career.</li>
+                <li>Support my family and community.</li>
+                <li>Maintain a healthy and happy lifestyle.</li>
+                <li>Travel the world and explore new opportunities.</li>
+            </ul>
+        </div>
 
-    <!-- JavaScript Section -->
-    <div class="container">
-        <h2>Interactive JavaScript Example</h2>
-        <p id="demo">This is a paragraph.</p>
-        <button onclick="myFunction()">Click Me!</button>
+        <div class="container">
+            <h2>Interactive JavaScript Example</h2>
+            <p id="demo">This is a paragraph.</p>
+            <button onclick="myFunction()">Click Me!</button>
+        </div>
     </div>
 
     <script>
