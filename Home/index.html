@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile Web Page</title>
     <style>
-        /* General Styling */
+        /* General Styles */
         body {
-            font-family: "Arial", sans-serif;
             background-color: #f0f8ff;
-            color: #333;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
             display: flex;
             flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
+            align-items: center;
         }
 
         h1 {
@@ -22,29 +23,47 @@
             background-color: #4682b4;
             color: white;
             margin: 0;
-        }
-
-        .landscape-container {
-            display: flex;
-            flex: 1;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-            justify-content: space-around;
-            align-items: stretch;
-        }
-
-        .container {
-            flex: 1 1 calc(25% - 40px);
-            max-width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
+            width: 100%;
+            font-size: 2.5em;
+            font-weight: bold;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 1.8em;
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 15px;
+            text-align: center;
+        }
+
+        a {
+            color: #4682b4;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2e8b57;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 15px;
             box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
         .gallery-container {
@@ -52,129 +71,105 @@
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
-        }
-
-        .gallery-item {
-            flex: 1 1 30%;
-            max-width: 200px;
-            text-align: center;
+            margin: 20px 0;
         }
 
         .gallery-item img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .gallery-item img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* Button Styling */
+        /* Button Styles */
         button {
+            margin: 10px;
+            padding: 10px 20px;
             background-color: #4682b4;
             color: white;
-            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin: 10px auto;
-            display: block;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
             background-color: #2e8b57;
         }
-
-        /* Responsive Design */
-        @media screen and (max-width: 1024px) {
-            .container {
-                flex: 1 1 calc(50% - 40px);
-                max-width: 50%;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .container {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
-    <h1>Personal Profile</h1>
+    <h1>Personal Profile Web Page</h1>
 
-    <div class="landscape-container">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I’m Marianne Ellise P. Lama, a second-year student at Asia Pacific College. I was born and raised in Taguig City. I love outdoor activities, especially camping, hiking, and swimming. I’m passionate about self-growth and academic excellence.</p>
-            <p>
-                <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr" target="_blank">Facebook</a> | 
-                <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | 
-                <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
-            </p>
-        </div>
+    <!-- About Me Section -->
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            <strong>Marianne Ellise P. Lama</strong> <br>
+            <a href="mailto:mplama@student.apc.edu.ph">mplama@student.apc.edu.ph</a>
+        </p>
+        <p>
+            I am a second-year student at Asia Pacific College, passionate about personal growth, exploring nature, and enjoying life's adventures.
+        </p>
+        <p>
+            <a href="https://www.facebook.com/Mariannaellise?_rdc=1&_rdr#" target="_blank">Facebook</a>
+            |
+            <a href="https://www.instagram.com/mariannaellise?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+            |
+            <a href="https://www.linkedin.com/in/marianne-ellise-lama-3b0840289/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
 
-        <div class="container">
-            <h2>Education & Achievements</h2>
-            <ul>
-                <li>Graduated with honors from Signal Village National High School.</li>
-                <li>Senior High: Learn & Explore Montessori School.</li>
-                <li>Currently studying at Asia Pacific College.</li>
-            </ul>
-        </div>
+    <!-- Other Sections -->
+    <div class="container">
+        <h2>Education / Achievements</h2>
+        <ul>
+            <li>Graduated with honors from Signal Village National High School and Learn & Explore Montessori School.</li>
+            <li>Currently studying at Asia Pacific College.</li>
+        </ul>
+    </div>
 
-        <div class="container">
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li>Camping</li>
-                <li>Trekking or Hiking</li>
-                <li>Swimming</li>
-                <li>Learning guitar</li>
-                <li>Traveling</li>
-            </ul>
-        </div>
+    <div class="container">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Camping</li>
+            <li>Hiking</li>
+            <li>Swimming</li>
+            <li>Learning guitar</li>
+            <li>Traveling</li>
+        </ul>
+    </div>
 
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="Me">
-                </div>
+    <div class="container">
+        <h2>Picture Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
             </div>
-        </div>
-
-        <div class="container">
-            <h2>Goals & Dreams</h2>
-            <p>My dream is to live a purposeful life, filled with adventures, self-growth, and giving back to those who support me.</p>
-            <ul>
-                <li>Achieve success in my career.</li>
-                <li>Support my family and community.</li>
-                <li>Maintain a healthy and happy lifestyle.</li>
-                <li>Travel the world and explore new opportunities.</li>
-            </ul>
-        </div>
-
-        <div class="container">
-            <h2>Interactive JavaScript Example</h2>
-            <p id="demo">This is a paragraph.</p>
-            <button onclick="myFunction()">Click Me!</button>
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+            </div>
         </div>
     </div>
 
-    <script>
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "You clicked the button!";
-        }
-    </script>
+    <!-- JavaScript Section -->
+    <div class="container">
+        <h2>Interactive Section</h2>
+        <p id="demo">Click the buttons below to see some actions:</p>
+        <button type="button" onclick="myFunction()">Change Text</button>
+        <button type="button" onclick="myFunction2()">Reset Text</button>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="js/myscript.js"></script>
 </body>
 </html>
