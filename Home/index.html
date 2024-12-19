@@ -46,7 +46,7 @@
             font-size: 1.5em;
             font-weight: bold;
             color: white;
-            background-color: #2e8b57;
+            background-color: #4682b4; 
             border-radius: 15px;
             cursor: pointer;
             transition: transform 0.3s, background-color 0.3s;
@@ -54,7 +54,7 @@
 
         .box:hover {
             transform: scale(1.05);
-            background-color: #3cb371;
+            background-color: #5a87c1; 
         }
 
         #content {
@@ -109,6 +109,7 @@
 <body>
     <h1>Personal Profile Web Page</h1>
     <div class="box-container">
+        <div class="box" onclick="showContent('about')">About Me</div>
         <div class="box" onclick="showContent('education')">Education / Achievements</div>
         <div class="box" onclick="showContent('it-experience')">IT Experience</div>
         <div class="box" onclick="showContent('hobbies')">Hobbies & Interests</div>
@@ -118,6 +119,12 @@
 
     <div id="content">
         <button onclick="hideContent()" style="margin-bottom: 20px;">Back</button>
+        <div id="about" style="display: none;">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Marianne Ellise P. Lama. I am a computer science student with a passion for technology, innovation, and learning. I have a love for outdoor activities such as camping, hiking, and swimming. I also enjoy exploring new places and learning new skills, like playing the guitar.
+            </p>
+        </div>
         <div id="education" style="display: none;">
             <h2>Education / Achievements</h2>
             <ul>
