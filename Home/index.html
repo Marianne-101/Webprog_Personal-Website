@@ -10,60 +10,41 @@
             color: #333;
             margin: 0;
             padding: 0;
-        }
-
-        h1, h2 {
-            text-align: center;
-            color: #4682b4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
         }
 
         h1 {
+            text-align: center;
             padding: 20px;
             background-color: #4682b4;
             color: white;
             margin: 0;
         }
 
-        p {
-            line-height: 1.6;
-            text-align: center;
-            padding: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            padding: 5px 0;
-        }
-
-        a {
-            color: #4682b4;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Container Styling */
         .landscape-container {
             display: flex;
+            flex: 1;
             flex-wrap: wrap;
             gap: 20px;
             padding: 20px;
             justify-content: space-around;
+            align-items: stretch;
         }
 
         .container {
-            flex: 1 1 calc(33.33% - 40px);
-            max-width: 300px;
+            flex: 1 1 calc(25% - 40px);
+            max-width: 25%;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .gallery-container {
@@ -99,7 +80,8 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin: 10px;
+            margin: 10px auto;
+            display: block;
         }
 
         button:hover {
@@ -109,13 +91,15 @@
         /* Responsive Design */
         @media screen and (max-width: 1024px) {
             .container {
-                flex: 1 1 45%;
+                flex: 1 1 calc(50% - 40px);
+                max-width: 50%;
             }
         }
 
         @media screen and (max-width: 768px) {
             .container {
                 flex: 1 1 100%;
+                max-width: 100%;
             }
         }
     </style>
