@@ -1,165 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
+    <title>Personal Profile Web Page</title>
     <style>
-        /* General Styles */
         body {
+            background-color: #f0f8ff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
             color: #333;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
         }
 
         h1 {
+            text-align: center;
+            padding: 20px;
             background-color: #4682b4;
             color: white;
-            padding: 20px;
             margin: 0;
-            text-align: center;
             width: 100%;
+            font-size: 2.5em;
+            font-weight: bold;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .about-me {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .about-me p {
-            margin: 10px;
-            line-height: 1.6;
-        }
-
-        a {
-            color: #4682b4;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #2e8b57;
-        }
-
-        /* Navigation Boxes */
         .box-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            width: 90%;
+            height: 70%;
+            margin-top: 20px;
         }
 
         .box {
-            width: 200px;
-            height: 100px;
-            background-color: #4682b4;
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
             text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            background-color: #2e8b57;
+            border-radius: 15px;
+            cursor: pointer;
             transition: transform 0.3s, background-color 0.3s;
         }
 
         .box:hover {
             transform: scale(1.05);
-            background-color: #2e8b57;
+            background-color: #3cb371;
         }
 
-        /* Content Sections */
-        .section {
+        #content {
             display: none;
-            max-width: 800px;
-            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f8ff;
             padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(30% - 15px);
+            max-width: 220px;
+            background-color: lightblue;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin: 20px 0;
-            text-align: center;
+            overflow: hidden;
+            padding: 10px;
         }
 
-        .active {
+        .gallery-item img {
+            width: 100%;
+            height: auto;
             display: block;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Personal Profile</h1>
-
-    <!-- About Me Section -->
-    <div class="about-me">
-        <h2>About Me</h2>
-        <p><strong>Marianne Ellise P. Lama</strong></p>
-        <p><a href="mailto:mplama@student.apc.edu.ph">mplama@student.apc.edu.ph</a></p>
-        <p>I am a second-year student at Asia Pacific College, passionate about personal growth, exploring nature, and enjoying life's adventures.</p>
-    </div>
-
-    <!-- Navigation Boxes -->
+    <h1>Personal Profile Web Page</h1>
     <div class="box-container">
-        <div class="box" onclick="showSection('education')">Education / Achievements</div>
-        <div class="box" onclick="showSection('experience')">IT Experience</div>
-        <div class="box" onclick="showSection('hobbies')">Hobbies & Interests</div>
-        <div class="box" onclick="showSection('goals')">Goals</div>
-        <div class="box" onclick="showSection('gallery')">Picture Gallery</div>
+        <div class="box" onclick="showContent('education')">Education / Achievements</div>
+        <div class="box" onclick="showContent('it-experience')">IT Experience</div>
+        <div class="box" onclick="showContent('hobbies')">Hobbies & Interests</div>
+        <div class="box" onclick="showContent('goals')">Goals</div>
+        <div class="box" onclick="showContent('gallery')">Picture Gallery</div>
     </div>
 
-    <!-- Content Sections -->
-    <div id="education" class="section">
-        <h2>Education / Achievements</h2>
-        <ul>
-            <li>Graduated with honors from Signal Village National High School and Learn & Explore Montessori School.</li>
-            <li>Currently studying at Asia Pacific College.</li>
-        </ul>
-    </div>
-
-    <div id="experience" class="section">
-        <h2>IT Experience</h2>
-        <p>Details about IT projects, internships, or other relevant experiences.</p>
-    </div>
-
-    <div id="hobbies" class="section">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Camping</li>
-            <li>Hiking</li>
-            <li>Swimming</li>
-            <li>Learning guitar</li>
-            <li>Traveling</li>
-        </ul>
-    </div>
-
-    <div id="goals" class="section">
-        <h2>Goals</h2>
-        <p>Short-term and long-term goals for personal and professional growth.</p>
-    </div>
-
-    <div id="gallery" class="section">
-        <h2>Picture Gallery</h2>
-        <p>Photo gallery will go here. Add relevant images.</p>
+    <div id="content">
+        <button onclick="hideContent()" style="margin-bottom: 20px;">Back</button>
+        <div id="education" style="display: none;">
+            <h2>Education / Achievements</h2>
+            <ul>
+                <li>I finished my High School at Signal Village National High School.</li>
+                <li>I Graduated Senior High at Learn & Explore Montessori School.</li>
+                <li>Currently Studying at Asia Pacific College.</li>
+                <li>Graduated High School & Senior High with Honors.</li>
+            </ul>
+        </div>
+        <div id="it-experience" style="display: none;">
+            <h2>IT Experience</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Code Combat</li>
+            </ul>
+        </div>
+        <div id="hobbies" style="display: none;">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Camping</li>
+                <li>Trekking or Hiking</li>
+                <li>Swimming</li>
+                <li>Learning how to play guitar</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+        <div id="goals" style="display: none;">
+            <h2>Goals In Life / Dream</h2>
+            <ul>
+                <li>To be successful</li>
+                <li>To give back to those who believe in me</li>
+                <li>To never forget to enjoy life</li>
+                <li>Maintain a Healthy Lifestyle</li>
+                <li>Adventure and Exploration</li>
+            </ul>
+        </div>
+        <div id="gallery" style="display: none;">
+            <h2>Picture Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/camping.jpg?raw=true" alt="Camping">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/ocean.jpg?raw=true" alt="Ocean">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/main/Images/picture%20of%20me.jpg?raw=true" alt="My Picture">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => section.classList.remove('active'));
+        function showContent(section) {
+            document.querySelectorAll('#content > div').forEach(div => div.style.display = 'none');
+            document.getElementById(section).style.display = 'block';
+            document.getElementById('content').style.display = 'block';
+        }
 
-            // Show the selected section
-            const selectedSection = document.getElementById(sectionId);
-            if (selectedSection) {
-                selectedSection.classList.add('active');
-            }
+        function hideContent() {
+            document.getElementById('content').style.display = 'none';
         }
     </script>
 </body>
