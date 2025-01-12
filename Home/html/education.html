@@ -6,34 +6,40 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Education / Achievements</title>
     <style>
+        /* Set background image for the entire body */
         body {
             background-image: url('https://github.com/Marianne-101/Webprog_Personal-Website/blob/feature/2_MPL_customize_my_website/Images/stars.jpg?raw=true');
-            background-size: cover; 
-            background-position: center center; 
-            background-attachment: fixed;
+            background-size: cover; /* Cover the whole page */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; /* Fix the background image in place */
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            min-height: 100vh;       /* Take up full height of the viewport */
             margin: 0;
-            background: #f3f4f6; 
+            background: #f3f4f6; /* Fallback color */
         }
         
+        /* Styling the box containing the content */
         .education-box {
-            background: rgba(255, 255, 255, 0.8); 
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background to make content readable */
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            width: 50%;
+            width: 50%; /* Adjust width as needed */
+            max-width: 600px; /* Prevent the box from becoming too wide */
             text-align: center;
         }
 
+        /* List styling for education items */
         .education-box ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
+        /* Styling individual list items */
         .education-box li {
             margin: 10px 0;
         }
