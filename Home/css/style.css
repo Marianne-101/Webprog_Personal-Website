@@ -1,3 +1,12 @@
+#education-section {
+    background-image: url('https://github.com/Marianne-101/Webprog_Personal-Website/blob/feature/2_MPL_customize_my_website/Images/stars.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+
 #education-box { 
     display: none; 
     width: 100%;  
