@@ -103,13 +103,12 @@ section {
 }
 
 :root {
-    --circle-size: 500px; /* Updated circle size */
+    --circle-size: 300px; /* Increase the circle size here */
 }
 
-
 .image {
-    width: 200px;
-    height: 200px;
+    width: var(--circle-size);
+    height: var(--circle-size);
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 50px #8a2be2;
@@ -117,11 +116,13 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 .main-container .content {
     color: white;
