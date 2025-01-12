@@ -5,44 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Education / Achievements</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: #f3f4f6; /* Background color matching the main page */
-        }
-        .education-box {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            width: 50%;
-            text-align: center;
-        }
-        .education-box h2 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .education-box ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .education-box li {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #555;
-        }
-        .education-box span {
-            font-weight: bold;
-            color: #0066cc;
-        }
-    </style>
 </head>
 <body>
     <div class="education-box">
@@ -56,7 +18,23 @@
     </div>
 
     <section id="education-section">
-</section>
+        <div id="education-box">
+            <h2>Education Details</h2>
+            <ul>
+                <li>Grade School: Top Student</li>
+                <li>Junior High: Honors Graduate from Signal Village National High School</li>
+                <li>Senior High: Honors Graduate from Learn & Explore Montessori School</li>
+                <li>Currently: Pursuing a degree at Asia Pacific College</li>
+            </ul>
+            <div id="close-box">Close</div>
+        </div>
+    </section>
 
+    <script>
+        document.getElementById('education-box').style.display = 'none'; // Initially hide the box
+        document.getElementById('close-box').addEventListener('click', function() {
+            document.getElementById('education-box').style.display = 'none'; // Hide the box when clicked
+        });
+    </script>
 </body>
 </html>
