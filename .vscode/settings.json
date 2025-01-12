@@ -1,5 +1,6 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
-        "feature/css-grid"
+        "feature/css-grid",
+        "feature/2_MPL_customize_my_website"
     ]
 }
