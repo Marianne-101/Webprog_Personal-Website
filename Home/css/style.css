@@ -1,3 +1,26 @@
+/* Root variable for circle size */
+:root {
+    --circle-size: 700px; 
+}
+
+/* Global reset and font setup */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body background and layout */
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url('https://github.com/Marianne-101/Webprog_Personal-Website/blob/feature/2_MPL_customize_my_website/Images/stars.jpg?raw=true') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Education box */
 #education-box { 
     display: none; 
     width: 100%;  
@@ -20,6 +43,7 @@
     margin: 10px 0; 
 } 
 
+/* Close button for education box */
 #close-box { 
     display: block; 
     margin-top: 20px; 
@@ -33,29 +57,12 @@
     text-decoration: underline; 
 } 
 
+/* Info box (hidden by default) */
 .info-box { 
     display: none; 
 }
 
-:root {
-    --circle-size: 700px; 
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: url('https://github.com/Marianne-101/Webprog_Personal-Website/blob/feature/2_MPL_customize_my_website/Images/stars.jpg?raw=true') no-repeat center center fixed;
-    background-size: cover;
-}
-
+/* Navigation bar and elements */
 nav {
     width: 100%;
     height: 10vh;
@@ -125,6 +132,7 @@ nav {
     color: #8a2be2;
 }
 
+/* Dropdown menu */
 .dropdown {
     z-index: 100;
     position: absolute;
@@ -151,6 +159,7 @@ nav {
     background-color: #8a2be2;
 }
 
+/* Main container for content */
 section {
     width: 100%;
     height: 90vh;
@@ -164,6 +173,7 @@ section {
     align-items: center;
 }
 
+/* Circle image container */
 .image {
     width: var(--circle-size);
     height: var(--circle-size);
@@ -181,6 +191,7 @@ section {
     object-fit: cover;
 }
 
+/* Image hover animation */
 .main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
 }
@@ -197,6 +208,7 @@ section {
     }
 }
 
+/* Content area */
 .main-container .content {
     color: white;
     width: 40%;
@@ -227,6 +239,7 @@ section {
     margin: 10px 0;
 }
 
+/* Social media icons */
 .social-links i {
     display: inline-flex;
     justify-content: center;
@@ -249,6 +262,7 @@ section {
     filter: drop-shadow(0 0 10px #8a2be2);
 }
 
+/* Button styles */
 .content button {
     width: 50%;
     height: 6vh;
@@ -272,6 +286,7 @@ section {
     box-shadow: 0 0 40px #8a2be2;
 }
 
+/* Media queries */
 @media (max-width:884px) {
     nav .logo {
         position: absolute;
