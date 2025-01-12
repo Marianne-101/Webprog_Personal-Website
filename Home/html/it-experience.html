@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>IT Experience</title>
-    <link rel="stylesheet" href="path/to/style.css">  <!-- Ensure correct path to CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f3f4f6;
+        }
+        .experience-box {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            text-align: center;
+        }
+        .experience-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .experience-box li {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">My IT Experience</div>
-            <div class="hamburg">☰</div>
-            <div class="cancel">✖</div>
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <section>
-        <div class="main-container">
-            <div class="image">
-                <img src="your-image-url.jpg" alt="Description of IT Experience Image">
-            </div>
-            <div class="content">
-                <h1>IT Experience <span>with Code</span></h1>
-                <p>This is where your IT experience description goes.</p>
-                <button>Learn More</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-        </div>
-    </footer>
+    <div class="experience-box">
+        <h2>IT Experience</h2>
+        <ul>
+            <li>Passed Grade School as one of the top students</li>
+            <li>Completed Junior High School at Signal Village National High School (with honors)</li>
+            <li>Graduated Senior High School at Learn & Explore Montessori School (with honors)</li>
+            <li>Currently studying at Asia Pacific College</li>
+        </ul>
+    </div>
 </body>
 </html>
