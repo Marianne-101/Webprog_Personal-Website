@@ -103,7 +103,7 @@ section {
 }
 
 :root {
-    --circle-size: 300px; /* Increase the circle size here */
+    --circle-size: 400px; /* Set your desired circle size */
 }
 
 .image {
@@ -122,7 +122,6 @@ section {
     height: 100%;
     object-fit: cover;
 }
-
 
 .main-container .content {
     color: white;
