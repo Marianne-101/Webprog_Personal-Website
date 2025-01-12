@@ -3,81 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Marianne Web Page</title>
+    <title>Education/Achievements</title>
     <style>
-        /* Inline styles for demonstration (move these to your CSS file) */
-        #education-circle {
-            display: none; /* Hidden by default */
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: #f0f0f0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            text-align: center;
+        body {
             font-family: Arial, sans-serif;
-            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
         }
-        #education-circle ul {
+
+        .education-box {
+            width: 400px;
+            height: 400px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .education-box ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        #education-circle li {
+
+        .education-box li {
             margin: 10px 0;
-        }
-        #close-circle {
-            display: block;
-            margin-top: 20px;
-            color: #007BFF;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        #close-circle:hover {
-            text-decoration: underline;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <span>Hola! Soy Marianne</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                    <a href="#">Education/Achievements</a>
-                </div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">IT Experience</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Hobbies/Interest</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">My Goals</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Picture Gallery</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        </div>
-    </nav>
-
-    <div id="education-circle">
+    <div class="education-box">
         <ul>
             <li>Passed Grade School as one of the top students</li>
             <li>Completed Junior High School at Signal Village National High School (with honors)</li>
             <li>Graduated Senior High School at Learn & Explore Montessori School (with honors)</li>
             <li>Currently studying at Asia Pacific College</li>
         </ul>
-        <span id="close-circle" onclick="hideEducation()">Close</span>
     </div>
-
-    <script>
-        function showEducation() {
-            document.getElementById("education-circle").style.display = "block";
-        }
-        function hideEducation() {
-            document.getElementById("education-circle").style.display = "none";
-        }
-    </script>
 </body>
 </html>
