@@ -1,4 +1,4 @@
-const app = Vue.createApp({
+const app2 = Vue.createApp({
     data() {
       return {
         text: ''
@@ -6,7 +6,8 @@ const app = Vue.createApp({
     },
     methods: {
       changeText() {
-        this.text = 'Hello World!'
+        this.text = 'Thank you for getting to know Me!'
       }
     }
   })
+ app2.mount('#app2')
