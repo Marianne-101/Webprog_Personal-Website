@@ -14,7 +14,7 @@
             </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                    <a href="#" onclick="showEducation()">Education / Achievements</a>
+                    <a href="#" id="education-link" onclick="showEducation()">Education / Achievements</a>
                 </div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">IT Experience</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Hobbies / Interest</a></div>
@@ -24,24 +24,24 @@
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
 
-        <div id="education-box">
-            <ul>
-                <li>Passed Grade School as one of the top students</li>
-                <li>Completed Junior High School at Signal Village National High School (with honors)</li>
-                <li>Graduated Senior High School at Learn & Explore Montessori School (with honors)</li>
-                <li>Currently studying at Asia Pacific College</li>
-            </ul>
-            <span id="close-box" onclick="hideEducation()">Close</span>
-        </div>
-    
-        <script>
-            function showEducation() {
-                document.getElementById("education-box").style.display = "block";
-            }
-            function hideEducation() {
-                document.getElementById("education-box").style.display = "none";
-            }
-        </script>
+        <div id="education-box"> 
+            <ul> 
+                <li>Passed Grade School as one of the top students</li> 
+                <li>Completed Junior High School at Signal Village National High School (with honors)</li> 
+                <li>Graduated Senior High School at Learn & Explore Montessori School (with honors)</li> 
+                <li>Currently studying at Asia Pacific College</li> 
+            </ul> 
+            <span id="close-box" onclick="hideEducation()">Close</span> 
+        </div> 
+        <script> 
+        function showEducation() { 
+            document.getElementById("education-box").style.display = "block"; 
+            } 
+            function hideEducation() { 
+                document.getElementById("education-box").style.display = "none"; 
+                } 
+                
+                </script>
 
         <div class="dropdown">
             <div class="links">
