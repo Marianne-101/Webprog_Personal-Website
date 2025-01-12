@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
 :root {
-    --circle-size: 300px; /* Increase the circle size here */
+    --circle-size: 600px; /* Increase the circle size here */
 }
 
 * {
