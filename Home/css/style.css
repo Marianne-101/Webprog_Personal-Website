@@ -70,6 +70,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -83,14 +84,17 @@ nav {
     text-shadow: 0 0 10px #8a2be2;
 }
 
-.hamburg,
-.cancel {
+/* Hide the checkbox and label initially for menu toggle */
+input[type="checkbox"] {
+    display: none;
+}
+
+.hamburg {
     cursor: pointer;
     position: absolute;
     right: 15px;
     top: 10px;
     color: white;
-    display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
@@ -125,6 +129,11 @@ nav {
 
 .nav-container .links a:hover {
     color: #8a2be2;
+}
+
+/* When the checkbox is checked, show the menu */
+input[type="checkbox"]:checked + label + .links {
+    display: block;
 }
 
 /* Dropdown menu */
@@ -315,10 +324,10 @@ section {
 }
 
 @media (max-width:440px) {
-    .main-container .image {
-        width: 50%;
-        height: 60%;
-        margin-bottom: 0px;
+     .main-container .image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
     }
 
     .main-container .content {
