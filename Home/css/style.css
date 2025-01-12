@@ -17,7 +17,8 @@ body {
     background-size: cover;
 }
 
-#education-box { 
+/* Education box */
+.education-box { 
     display: block; 
     width: 100%;  
     height: auto; 
@@ -29,6 +30,7 @@ body {
     border: 1px solid #ccc; 
     text-align: left; 
 }
+
 #education-box ul { 
     list-style: disc; 
     margin: 0; 
