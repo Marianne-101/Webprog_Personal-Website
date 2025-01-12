@@ -1,37 +1,4 @@
-#education-box {
-    display: none; /* Hidden by default */
-    width: 400px;
-    height: auto;
-    background: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-#education-box ul {
-    list-style: disc;
-    margin: 0;
-    padding-left: 20px;
-}
-#education-box li {
-    margin: 10px 0;
-}
-#close-box {
-    display: block;
-    margin-top: 20px;
-    color: #007BFF;
-    cursor: pointer;
-    font-size: 14px;
-    text-align: right;
-}
-#close-box:hover {
-    text-decoration: underline;
-}
+#education-box { display: none; /* Hidden by default */ width: 100%; /* Adjust width to cover the content area */ height: auto; background: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; font-family: Arial, sans-serif; border: 1px solid #ccc; text-align: left; } #education-box ul { list-style: disc; margin: 0; padding-left: 20px; } #education-box li { margin: 10px 0; } #close-box { display: block; margin-top: 20px; color: #007BFF; cursor: pointer; font-size: 14px; text-align: right; } #close-box:hover { text-decoration: underline; } .info-box { display: none; /* Hidden by default */ }
 
 :root {
     --circle-size: 700px; /* Set your desired circle size */

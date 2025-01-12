@@ -24,24 +24,7 @@
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
 
-        <div id="education-box"> 
-            <ul> 
-                <li>Passed Grade School as one of the top students</li> 
-                <li>Completed Junior High School at Signal Village National High School (with honors)</li> 
-                <li>Graduated Senior High School at Learn & Explore Montessori School (with honors)</li> 
-                <li>Currently studying at Asia Pacific College</li> 
-            </ul> 
-            <span id="close-box" onclick="hideEducation()">Close</span> 
-        </div> 
-        <script> 
-        function showEducation() { 
-            document.getElementById("education-box").style.display = "block"; 
-            } 
-            function hideEducation() { 
-                document.getElementById("education-box").style.display = "none"; 
-                } 
-                
-                </script>
+        <div id="content"> <div id="default-content"> <p>¿Cómo estás!<br> I am a computer science student with a passion for technology, innovation, and learning. I enjoy outdoor activities such as camping, hiking, and swimming. </p> </div> <div id="education-box" class="info-box"> <ul> <li>Passed Grade School as one of the top students</li> <li>Completed Junior High School at Signal Village National High School (with honors)</li> <li>Graduated Senior High School at Learn & Explore Montessori School (with honors)</li> <li>Currently studying at Asia Pacific College</li> </ul> <span id="close-box" onclick="hideEducation()">Close</span> </div> </div> <script> function showEducation() { document.getElementById("default-content").style.display = "none"; document.getElementById("education-box").style.display = "block"; } function hideEducation() { document.getElementById("default-content").style.display = "block"; document.getElementById("education-box").style.display = "none"; } </script>
 
         <div class="dropdown">
             <div class="links">
