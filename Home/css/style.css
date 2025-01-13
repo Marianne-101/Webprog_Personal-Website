@@ -18,7 +18,7 @@
 }
 
 :root {
-    --circle-size: 700px; 
+    --circle-size: 500px; 
 }
 
 * {
@@ -103,7 +103,6 @@ nav {
     text-shadow: 0 0 10px #8a2be2;
 }
 
-/* Hide the checkbox and label initially for menu toggle */
 input[type="checkbox"] {
     display: none;
 }
@@ -150,12 +149,10 @@ input[type="checkbox"] {
     color: #8a2be2;
 }
 
-/* When the checkbox is checked, show the menu */
 input[type="checkbox"]:checked + label + .links {
     display: block;
 }
 
-/* Dropdown menu */
 .dropdown {
     z-index: 100;
     position: absolute;
