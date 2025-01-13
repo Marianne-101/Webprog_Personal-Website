@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Marianne Web Page</title>
 </head>
@@ -11,8 +12,9 @@
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <span>Hola! Soy Marianne</span>
+                <<span>Hola! Soy Marianne</span>
             </div>
+            
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                     <a href="html/education.html">Education / Achievements</a>
@@ -33,10 +35,10 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                     <a href="html/picture.html">Picture Gallery</a>
                 </div>
-            
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-            
-        </div>
+                
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        
+    </div>
         <div class="dropdown">
             <div class="links">
                 <a href="html/education.html">Education / Achievements</a>
@@ -48,34 +50,36 @@
             </div>
         </div>
     </nav>
-
-    <label for="name">Your Name:</label>
-    <input type="text" v-model="name" id="name" placeholder="Enter your name" />
-  </div>
-  <div>
-    <label for="comment">Your Comment:</label>
-    <textarea v-model="newComment" id="comment" placeholder="Leave a comment..."></textarea>
-  </div>
-  <button @click="addComment">Submit</button>
+    
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="https://github.com/Marianne-101/Webprog_Personal-Website/blob/feature/2_MPL_customize_my_website/Images/profile.jpg?raw=true" alt="">
+            </div>
+            
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    <span> ¿Cómo estás! </span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I am a computer science student with a passion for technology, innovation, and learning. I enjoy outdoor activities such as camping, hiking, and swimming.<span class="typewriter-text"></span><label for="">|</label></div>
+                
+                <div class="social-links">
+    <a href="https://www.facebook.com/yourprofile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/mariannaellise/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/marianne-lama-136743286/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Marianne-101" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-github"></i></a>
 </div>
 
-<div v-if="comments.length > 0">
-  <h3>Comments:</h3>
-  <ul>
-    <li v-for="(comment, index) in comments" :key="index">
-      <strong>{{ comment.name }}</strong>: {{ comment.text }} ({{ comment.timestamp }})
-    </li>
-  </ul>
-</div>
-</div>  
-</section>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
-<script src="js/vue.js"></script>
-<script src="js/comments.js"></script>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Get to know me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="comments.js"></script>
+    <script src="vue.js"></script>
 
 </body>
 </html>
