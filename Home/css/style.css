@@ -1,3 +1,46 @@
+#appContainer {
+    margin-top: 20px;
+}
+
+#appContainer button {
+    padding: 10px 20px;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#appContainer button:hover {
+    background-color: #6a1ab9;
+}
+
+#app input,
+#app textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#app ul {
+    list-style: none;
+    padding: 0;
+}
+
+#app li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
 .message {
     font-size: large;
     color: black;
