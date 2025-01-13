@@ -1,40 +1,31 @@
-const app2 = Vue.createApp({
+const app = Vue.createApp({
     data() {
-      return {
-        name: '',
-        newComment: '',
-        comments: [],
-        post: {
-          reactions: {
-            like: 0,
-            love: 0,
-            haha: 0,
-            wow: 0,
-            sad: 0,
-            angry: 0
-          }
-        }
-      };
+        return {
+            showForm: false, // Controls the visibility of the form
+            name: "",
+            newComment: "",
+            comments: []
+        };
     },
     methods: {
-      react(reaction) {
-        this.post.reactions[reaction]++;
-      },
-      addComment() {
-        if (this.name && this.newComment) {
-          const timestamp = new Date().toLocaleString();
-          this.comments.push({
-            name: this.name,
-            text: this.newComment,
-            timestamp: timestamp
-          });
-          this.newComment = '';
-          this.name = '';
-        } else {
-          alert("Please fill in both your name and comment.");
+        toggleContent() {
+            this.showForm = !this.showForm; // Toggles form visibility
+        },
+        addComment() {
+            if (this.name && this.newComment) {
+                const timestamp = new Date().toLocaleString();
+                this.comments.push({
+                    name: this.name,
+                    text: this.newComment,
+                    timestamp
+                });
+                this.name = "";
+                this.newComment = "";
+            } else {
+                alert("Please enter your name and comment!");
+            }
         }
-      }
     }
-  });
+});
 
-  app2.mount('#app2');
+app.mount("#appContainer");
