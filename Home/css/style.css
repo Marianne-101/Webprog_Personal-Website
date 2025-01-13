@@ -1,3 +1,10 @@
+#app > div {
+      width: 200px;
+      padding: 20px;
+      border: dashed black 1px;
+      background-color: lightcoral;
+    }
+
 #app {
     display: inline-block;
     padding: 10px;
