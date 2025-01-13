@@ -11,7 +11,7 @@
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <<span>Hola! Soy Marianne</span>
+                <span>Hola! Soy Marianne</span>
             </div>
             
             <div class="links">
@@ -75,10 +75,35 @@
             </div>
         </div>
     </section>
+
+    <div id="app">
+        <label for="name">Your Name:</label>
+        <input type="text" v-model="name" id="name" placeholder="Enter your name" />
+        <div>
+            <label for="comment">Your Comment:</label>
+            <textarea v-model="newComment" id="comment" placeholder="Leave a comment..."></textarea>
+        </div>
+        <button @click="addComment">Submit</button>
+        <div v-if="comments.length > 0">
+            <h3>Comments:</h3>
+            <ul>
+                <li v-for="(comment, index) in comments" :key="index">
+                    <strong>{{ comment.name }}</strong>: {{ comment.text }} ({{ comment.timestamp }})
+                </li>
+            </ul>
+        </div>
+    </div>
     
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="comments.js"></script>
-    <script src="vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="js/style.js"></script>
+    <script>
+        function hamburg() {
+            document.querySelector('.dropdown').style.display = 'block';
+        }
+        function cancel() {
+            document.querySelector('.dropdown').style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
