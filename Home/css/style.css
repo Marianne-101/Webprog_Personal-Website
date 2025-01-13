@@ -4,7 +4,7 @@
 }
 
 :root {
-    --circle-size: 500px; 
+    --circle-size: 700px; 
 }
 
 * {
@@ -22,7 +22,6 @@ body {
     background-size: cover;
 }
 
-/* Education box */
 .education-box { 
     display: block; 
     width: 100%;  
