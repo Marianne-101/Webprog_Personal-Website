@@ -33,6 +33,8 @@
 
 #app li {
     background: #f9f9f9;
+    font: 1em sans-serif;
+    color: black;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
